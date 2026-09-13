@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry Service Web App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- EmailJS Library -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Laundry App</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="user-name">Garima </div>
+  </header>
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <h1>Revitalize Your Clothes with Expert Laundry Services!</h1>
+      <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+      <a href="#booking-section" class="btn">Book a service today!</a>
+    </div>
+    <div class="hero-right">
+      <img src="laundry.jpg" width="400" height="300" alt="Laundry Service">
+    </div>
+  </section>
+    <section id="booking-section" class="booking-container">
+    <div class="services-left">
+      <h2>Our Services</h2>
+      <p class="subtitle">Click On The Add To Cart Button To Add The Services To Your Cart</p>
+      
+      <div id="service-list">
+      </div>
+      
+      <p class="bottom-info">Add the items to the cart and book now</p>
+    </div>
+
+    <div class="services-right">
+      <div class="cart-box">
+        <h3>Added Items</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Service Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="cart-table-body">
+          </tbody>
+        </table>
+        <div class="total-section">
+          <strong>Total Amount: ₹<span id="total-amount">0.00</span></strong>
+        </div>
+      </div>
+      <div class="form-box">
+        <h3>Book Now</h3>
+        <form id="booking-form">
+          <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" id="user-name" required placeholder="John Doe">
+          </div>
+          <div class="input-group">
+            <label>Email ID</label>
+            <input type="email" id="user-email" required placeholder="john@example.com">
+          </div>
+          <div class="input-group">
+            <label>Phone Number</label>
+            <input type="tel" id="user-phone" required placeholder="9876543210">
+          </div>
+          <button type="submit" class="btn submit-btn">Book now</button>
+        </form>
+        <p id="confirmation-message" class="success-msg"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="quality-section">
+    <div class="quality-card">
+      <h3>Premium Services</h3>
+      <p>Top quality washing and care for all types of clothes.</p>
+    </div>
+    <div class="quality-card">
+      <h3>Quick Support</h3>
+      <p>We respond to customer questions quickly and easily.</p>
+    </div>
+    <div class="quality-card">
+      <h3>Hassle Free Delivery</h3>
+      <p>Pick up and drop off right at your doorstep.</p>
+    </div>
+    <div class="quality-card">
+      <h3>Affordable Prices</h3>
+      <p>Budget-friendly prices for everyday laundry needs.</p>
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <h2>Subscribe to our newsletter</h2>
+    <form id="newsletter-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+  </section>
+  <footer id="contact">
+    <div class="footer-col">
+      <p><strong>About us</strong></p>
+      <p>We provide standard laundry solutions for your everyday needs.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Important Links</h3>
+      <p><a href="#about">About us</a></p>
+      <p><a href="#contact">Contact us</a></p>
+      <p><a href="#">Privacy Policy</a></p>
+      <p><a href="#">Terms of use</a></p>
+      <p><a href="#">Refund Policy</a></p>
+    </div>
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>mail@site.com</p>
+      <p>+91 9123456780</p>
+    </div>
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <p>Facebook | Instagram | Twitter</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
